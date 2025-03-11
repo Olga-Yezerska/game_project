@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights of the hidden grove</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="p.png" type="image/x-icon">
+</head>
+<body>
+    <div id="greeting">
+        <h1>Knights of the hidden grove</h1>
+    </div>
+    <div class="main registration-state">
+        <div id="registration">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="username" placeholder="Your Name">
+            <button id="startButton">Search for Opponent</button>
+        </div>
+        <div id="waiting" style="display: none;">
+            <h1>Searching for an opponent...</h1>
+            <img src="ZKZg.gif" alt="Loading...">
+        </div>
+    </div>
+    <div class="game">
+    <canvas id="canvas" style="display: none;"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>
